@@ -30,10 +30,10 @@
               Benvenuto {{Auth::user()->name}}
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="{{route('create.post')}}">Admin</a></li>
+              {{-- <li><a class="dropdown-item" href="{{route('create.post')}}">Admin</a></li>
               <li><hr class="dropdown-divider"></li>
               <li></li>
-              <li><hr class="dropdown-divider"></li>
+              <li><hr class="dropdown-divider"></li> --}}
               <li><a class="nav-link" href="{{route('contattaci')}}">Contattaci</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="#" onclick="event.preventDefault(); document.querySelector('#logout').submit()">Logout</a></li>
