@@ -1,4 +1,4 @@
-<x-layout>
+<x-layout title="dettaglio viaggio">
     <div class="container">
         <div class="row">
             <div class="col-12">

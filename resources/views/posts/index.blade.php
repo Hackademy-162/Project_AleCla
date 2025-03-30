@@ -1,4 +1,4 @@
-<x-layout>
+<x-layout title="vetrina viaggi">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -13,7 +13,7 @@
                     <div class="card-body">
                       <h5 class="card-title">{{$post->title}}</h5>
                       <p class="card-text">{{$post->description}}</p>
-                      <a href="{{route('show.post', [$id => $post->id])}}" class="btn btn-primary">vai al dettaglio</a>
+                      <a href="{{route('show.post', ['id' => $post->id])}}" class="btn btn-primary">vai al dettaglio</a>
                     </div>
                 </div>
             </div>
