@@ -1,4 +1,4 @@
-<x-layout>
+<x-layout title="dettaglio viaggio">
     <div class="sfondoDettaglio2 vh-100">
         <div class="container">
             <div class="row justify-content-center align-content-center text-center">
