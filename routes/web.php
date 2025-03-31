@@ -3,9 +3,13 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\PublicController;
+use App\Http\Controllers\ArticleController;
 
 // home
-Route::get('/', [PublicController::class, 'welcome'])->name ('welcome');
+Route::get('/', [ArticleController::class, 'index'])->name ('welcome');
+// Route::get('/l', [ArticleController::class, 'index'])->name ('homepage');
+Route::get('/create', [ArticleController::class, 'create'])->name ('article.create');
+Route::post('create/submit', [ArticleController::class, 'store'])->name('article.store');
 
 // contatti
 Route::get('/contattaci', [PublicController::class, 'contact'])->name ('contattaci');
