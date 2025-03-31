@@ -1,8 +1,10 @@
 <x-layout title="vetrina viaggi">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h1>Vetrina Viaggi</h1>
+    <div class="sfondoDettaglio">
+        {{-- <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="titleItin mt-5 mb-5">VIAGGIA CON NOI PER TUTTO IL GLOBO</h1>
+                </div>
             </div>
         </div>
         <div class="row">
