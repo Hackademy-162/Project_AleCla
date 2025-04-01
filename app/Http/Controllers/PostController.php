@@ -31,7 +31,7 @@ class PostController extends Controller implements HasMiddleware
         // dd($post);
         $post->save();
         
-        return redirect()->route('welcome');
+        return redirect()->route('welcome')->mith('message', 'Viaggio creato con successo!');
     }
 
     public function index() {
@@ -44,6 +44,33 @@ class PostController extends Controller implements HasMiddleware
         // dd($id);
         $post = Post::find($id);
         return view('posts.show', compact('post'));
+    }
+
+    public function edit($id){
+        // dd($id);
+        $post = Post::find($id);
+        return view('posts.edit', compact('post'));
+    }
+
+    public function update(Request $request , $id){
+        // dd($request->all(), $id);
+        $post = Post::find($id);
+        $post->title = $request->title;
+        $post->description = $request->description;
+        $post->itinerary = $request->itinerary;
+        $post->img = $request->file('img')->store('posts', 'public');
+        $post->save();
+        // $post->update($request->all());
+
+        return redirect()->route('welcome')->with('message', 'Viaggio modificato con successo!');
+    }
+
+    public function destroy($id){
+        // dd($id);
+        $post = Post::find($id);
+        $post->delete();
+
+        return redirect()->route('welcome')->with('message', 'Viaggio eliminato con successo!');
     }
 
 }
