@@ -3,13 +3,17 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\PublicController;
-use App\Http\Controllers\ArticleController;
+// use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\ContinentController;
 
 // home
 Route::get('/', [PublicController::class, 'welcome'])->name ('welcome');
 // Route::get('/l', [ArticleController::class, 'index'])->name ('homepage');
 // Route::get('/create', [ArticleController::class, 'create'])->name ('article.create');
 // Route::post('create/submit', [ArticleController::class, 'store'])->name('article.store');
+Route::get('/continenti', [ContinentController::class, 'index'])->name ('continents.index');
+Route::get('/continenti/create', [ContinentController::class, 'create'])->name ('continents.create');
+Route::post('/continenti/submit', [ContinentController::class, 'store'])->name('continents.store');
 
 // contatti
 Route::get('/contattaci', [PublicController::class, 'contact'])->name ('contattaci');
@@ -28,3 +32,5 @@ Route::get('/tutti-i-viaggi', [PostController::class, 'index'])->name ('index.po
 Route::put('/dettaglio-viaggio/update/{id}', [PostController::class, 'update'])->name('post.update');
 
 Route::delete('/dettaglio-viaggio/delete/{id}', [PostController::class, 'destroy'])->name('delete.post');
+
+Route::get('/search/{continent}', [PostController::class, 'search'])->name('post.continent.search');

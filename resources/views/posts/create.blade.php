@@ -14,6 +14,11 @@
                       <input type="text" class="form-control @error('title') is-invalid @enderror" id="title" aria-describedby="emailHelp" name="title">
                       @error('title')<div class="alert alert-danger">{{ $message }}</div> @enderror
                     </div>
+                    <select name="continent" id="">
+                        @foreach ($continents as $continent)
+                            <option value="{{$continent->id}}">{{$continent->title}}</option>
+                        @endforeach
+                    </select>
                     <div class="mb-3">
                       <label for="post-img" class="form-label">immagini viaggio</label>
                       <input type="file" class="form-control @error('img') is-invalid @enderror" id="post-img" name="img">

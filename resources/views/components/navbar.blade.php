@@ -32,6 +32,8 @@
             <ul class="dropdown-menu bg-dark">
               {{-- <li><a class="dropdown-item" href="{{route('article.create')}}">Admin2</a></li>
               <li><hr class="dropdown-divider"></li> --}}
+              <li><a class="dropdown-item" href="{{route('continents.create')}}">Admin2</a></li>
+              <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="{{route('create.post')}}">Admin</a></li>
               <li><hr class="dropdown-divider"></li>
               <li></li>

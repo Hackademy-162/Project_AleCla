@@ -15,6 +15,11 @@
                       <input type="text" class="form-control @error('title') is-invalid @enderror" id="title" aria-describedby="emailHelp" name="title" value="{{$post->title}}">
                       @error('title')<div class="alert alert-danger">{{ $message }}</div> @enderror
                     </div>
+                    <select name="continent" id="">
+                        @foreach ($continents as $continent)
+                            <option value="{{$continent->id}}">{{$continent->title}}</option>
+                        @endforeach
+                    </select>
                     <div class="mb-3">
                       <img src="{{Storage::url($post->img)}}" alt="{{$post->title}}" height="100">
                     </div>

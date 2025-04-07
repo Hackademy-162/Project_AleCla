@@ -12,6 +12,12 @@
                         <img src="{{Storage::url($post->img)}}" class="card-img" alt="{{$post->title}}">
                         <div class="card-img-overlay">
                             <h5 class="card-title mt-5 mb-5 titleCard">{{$post->title}}</h5>
+                            @if ($post->continent)
+                            
+                            <p class="card-text mb-5 textDimension">Continente:{{$post->continent->title}}</p>
+                            @else
+                            <p class="card-text mb-5 textDimension">Continente: Anonimo </p>
+                            @endif
                             <p class="card-text mb-5 textDimension">{{$post->description}}</p>
                             <p class="card-text mb-5 textDimension">{{$post->itinerary}}</p>
                             <a href="{{route('index.post')}}" class="btn btn-primary mb-5 textDimension">Torna indietro</a>

@@ -6,25 +6,22 @@
                 {{ session('message') }}
             </div>
             @endif
-            <h1 class="title">ALECLA Viaggi</h1>
-            <div class="col-12 m-0 p-0">
-                
-                
-                {{-- CAROSELLO --}}
-                
-                {{-- <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            {{-- CAROSELLO --}}
+            <div class="col-12 mt-4 p-0">                
+                <div id="carouselExampleDark" class="carousel carousel-dark slide">
                     <div class="carousel-indicators">
-                        @foreach ($cards as $card)
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="{{$card['id']}}" class="active" aria-current="true" aria-label="{{$card['id']}}"></button>
+                        @foreach ($continents as $continent)
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="{{$continent['id']}}" class="active" aria-current="true" aria-label="{{$continent['id']}}"></button>
                         @endforeach
-                    </div>
+                    </div> 
                     <div class="carousel-inner">
-                        @foreach ($cards as $card)
-                        <a href="{{route('paginaViaggi')}}">
+                        @foreach ($continents as $continent)
+                        <a href="{{route('index.post')}}">
+                            <h1 class="title">ALECLA Viaggi</h1>
                             <div class="carousel-item @if($loop->first) active @endif" data-bs-interval="10000">
-                                <img src="{{$card['img']}}" class="d-block vh-100 w-100" alt="immagini carosello">
+                                <img src="{{Storage::url($continent['img'])}}" class="d-block vh-100 w-100" alt="immagini carosello">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h2 class="text-white">{{$card['title']}}</h2>
+                                    <h2 class="text-white">{{$continent['title']}}</h2>
                                 </div>
                             </div>
                         </a>
@@ -38,7 +35,7 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
-                </div> --}}
+                </div> 
             </div>
         </div>
     </header>
