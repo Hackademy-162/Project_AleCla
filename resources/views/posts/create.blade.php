@@ -15,17 +15,17 @@
                       @error('title')<div class="alert alert-danger">{{ $message }}</div> @enderror
                     </div>
                     <div class="mb-3">
-                      <label for="post-img" class="form-label">immagini viaggio</label>
+                      <label for="post-img" class="form-label">Immagine viaggio</label>
                       <input type="file" class="form-control @error('img') is-invalid @enderror" id="post-img" name="img">
                       @error('img')<div class="alert alert-danger">{{ $message }}</div> @enderror
                     </div>
                     <div class="mb-3">
-                        <label class="form-check-label" for="post-description">descrizione</label>
+                        <label class="form-check-label" for="post-description">Descrizione</label>
                         <textarea class="form-control @error('description') is-invalid @enderror" name="description" id="post-description" cols="30" rows="10" placeholder="scrivi la descrizione della meta" ></textarea>
                         @error('description')<div class="alert alert-danger">{{ $message }}</div> @enderror
                     </div>
                     <div class="mb-3">
-                        <label class="form-check-label" for="post-itinerary">itinerario</label>
+                        <label class="form-check-label" for="post-itinerary">Itinerario</label>
                         <textarea class="form-control @error('itinerary') is-invalid @enderror" name="itinerary" id="post-itinerary" cols="30" rows="10" placeholder="scrivi l'itinerario del tuo viaggio"></textarea>
                         @error('itinerary')<div class="alert alert-danger">{{ $message }}</div> @enderror
                     </div>

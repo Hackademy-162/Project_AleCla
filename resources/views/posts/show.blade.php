@@ -15,6 +15,13 @@
                             <p class="card-text mb-5 textDimension">{{$post->description}}</p>
                             <p class="card-text mb-5 textDimension">{{$post->itinerary}}</p>
                             <a href="{{route('index.post')}}" class="btn btn-primary mb-5 textDimension">Torna indietro</a>
+                            <a href="{{route('edit.post', ['id' => $post->id])}}" class="btn btn-warning mb-5 textDimension">Modifica articolo</a>
+                                <a href="{{route('delete.post', ['id' => $post->id])}}" class="btn btn-danger mb-5 textDimension" onclick="event.preventDefault(); document.querySelector('#form-delete').submit();">Elimina articolo</a>
+                                <form action="{{route('delete.post', ['id' => $post->id])}}" method="POST" id="form-delete">
+                                    @method('delete')
+                                    @csrf
+                                </form>
+                            </div>
                         </div>
                         {{-- <div class="card 100-vh" style="width: 18rem;">
                             <img src="{{Storage::url($post->img)}}" class="card-img-top" alt="{{$post->title}}">

@@ -10,7 +10,7 @@
           <a class="nav-link active text-white" aria-current="page" href="{{route('welcome')}}">HOME</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="{{route('index.post')}}">Itinerari</a>
+          <a class="nav-link text-white" href="{{route('index.post')}}">ITINERARI</a>
           </li>
           @guest
           <li class="nav-item dropdown">
@@ -30,10 +30,10 @@
               Benvenuto {{Auth::user()->name}}
             </a>
             <ul class="dropdown-menu bg-dark">
-              {{-- <li><a class="dropdown-item" href="{{route('create.post')}}">Admin</a></li>
+              <li><a class="dropdown-item text-white" href="{{route('create.post')}}">Admin</a></li>
               <li><hr class="dropdown-divider"></li>
               <li></li>
-              <li><hr class="dropdown-divider"></li> --}}
+              <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item text-white" href="{{route('contattaci')}}">Contattaci</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item text-white" href="#" onclick="event.preventDefault(); document.querySelector('#logout').submit()">Logout</a></li>

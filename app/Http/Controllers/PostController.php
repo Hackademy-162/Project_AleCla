@@ -11,7 +11,7 @@ use Illuminate\Routing\Controllers\HasMiddleware;
 
 class PostController extends Controller implements HasMiddleware
 {
-
+    
     public static function middleware() {
         return [
             new Middleware('auth', except:['index']),
@@ -21,7 +21,7 @@ class PostController extends Controller implements HasMiddleware
     public function create() {
         return view('posts.create');
     }
-
+    
     public function store(StorePostRequest $request){
         $post = new Post();
         $post->title = $request->title;
@@ -31,19 +31,45 @@ class PostController extends Controller implements HasMiddleware
         // dd($post);
         $post->save();
         
-        return redirect()->route('welcome');
+        return redirect()->route('welcome')->with('message', 'Viaggio creato con successo');
     }
-
+    
     public function index() {
         $posts = Post::all();
         // dd($posts);
         return view('posts.index', compact('posts'));
     }
-
+    
     public function show($id) {
         // dd($id);
         $post = Post::find($id);
         return view('posts.show', compact('post'));
     }
+    
+    public function edit($id) {
+        // dd$id
+        $post = Post::find($id);
+        return view('posts.edit', compact('post'));
+    }
+    
+    public function update(Request $request, $id) {
+        
+        // dd($request->all(), $id);
+        $post = Post::find($id);
+        $post->title = $request->title;
+        $post->description = $request->description;
+        $post->itinerary = $request->itinerary;
+        $post->img = $request->file('img')->store('posts', 'public');
+        $post->save();
 
+        return redirect()->route('welcome')->with('message', 'Viaggio modificato con successo');
+    }
+    
+    public function destroy($id) {
+        $post = Post::find($id);
+        $post->delete();
+
+        return redirect()->route('welcome')->with('message', 'Viaggio eliminato con successo!');
+    }
+    
 }
