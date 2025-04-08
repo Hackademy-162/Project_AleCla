@@ -3,16 +3,17 @@
     padding: 0;
 }
 
-header{
+/* header{
     background-image: url('./img/SfondoCards.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
-}
+} */
 
 .title{
-    text-align: center;
-    margin-top: 35vh;
+    /* text-align: center; */
+    /* margin-top: 35vh; */
+    position: absolute;
     font-size: 15vh;
     font-weight: 600;
     color: whitesmoke;
