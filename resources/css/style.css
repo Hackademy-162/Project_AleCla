@@ -3,19 +3,21 @@
     padding: 0;
 }
 
-/* header{
-    background-image: url('./img/SfondoCards.png');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-} */
+nav{
+    z-index: 999;
+}
+
+#headerHome{
+    height: calc(100vh - 40px);
+}
 
 .title{
-    /* text-align: center; */
-    /* margin-top: 35vh; */
     position: absolute;
     font-size: 15vh;
     font-weight: 600;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: whitesmoke;
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px lightblue;
     font-family: "Lobster", sans-serif;
@@ -44,15 +46,29 @@
     background-size: cover;
 }
 
-.sfondoDettaglio{
-    background: url(https://www.startmag.it/wp-content/uploads/viaggi-su-misura.jpg);
+.sfondoItin{
+    background: url(https://images.unsplash.com/photo-1512850183-6d7990f42385?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dmVydGljYWxlfGVufDB8fDB8fHww);
+    background-repeat: no-repeat;
     background-size: cover;
+}
+
+.card{
+    height: 90vh;
 }
 
 .cards{
     height: 50vh;
     width: 50vw;
     margin-right: 6vw;
+}
+
+.imgCont{
+    background-image: url(https://static.vecteezy.com/ti/vettori-gratis/p1/3484035-design-sfondo-astratto-moderno-con-forme-liquide-colorate-sfondo-fluido-design-per-la-pagina-di-atterraggio-tema-brochure-banner-copertina-stampa-volantino-libro-carta-o-pubblicita-vettoriale.jpg);
+    background-size: cover;
+}
+
+.imgCards{
+    height: 400px;
 }
 
 .textShadow{
@@ -68,3 +84,13 @@
 .textDimension{
     font-size: 2vh;
 }
+
+.text-white{
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px black, 0 0 25px grey, 0 0 5px white;
+}
+
+/* .text-2{
+    height: 60px;
+    text-overflow: ellipsis;
+} */

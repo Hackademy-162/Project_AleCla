@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Grazie per averci conattati</h1>
+    <h1>Grazie per averci contattati</h1>
     <p>il nostro customer Care vi ricontatterà il prima possibile</p>
     <p>ecco il riepilogo dei tuoi dati:</p>
     <ul>
