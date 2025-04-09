@@ -19,13 +19,13 @@ nav{
     left: 50%;
     transform: translate(-50%, -50%);
     color: whitesmoke;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px lightblue;
+    text-shadow: 1px 1px 2px black, 0 0 25px lightblue, 0 0 5px lightcyan;
     font-family: "Lobster", sans-serif;
     font-style: normal;
 }
 
 .titleNav{
-    font-size: 2vh;
+    font-size: 4vh;
     color: whitesmoke;
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px lightblue;
     font-family: "Lobster", sans-serif;
@@ -58,7 +58,7 @@ nav{
 
 .cards{
     height: 50vh;
-    width: 60vw;
+    width: 700px;
     margin-right: 6vw;
 }
 
@@ -87,10 +87,9 @@ nav{
 
 .text-white{
     color: whitesmoke;
-    text-shadow: 1px 1px 2px black, 0 0 25px grey, 0 0 5px white;
+    text-shadow: 2px 2px 4px black, 0 0 50px grey, 0 0 10px white;
 }
 
-/* .text-2{
-    height: 60px;
-    text-overflow: ellipsis;
-} */
+.marginBot{
+margin-bottom: 10vh;
+}

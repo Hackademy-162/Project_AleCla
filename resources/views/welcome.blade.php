@@ -6,7 +6,9 @@
                 {{ session('message') }}
             </div>
             @endif
+
             {{-- CAROUSEL --}}
+
             <div class="col-12 mt-4 p-0">                
                 <div id="carouselExampleSlidesOnly" class="carousel slide " data-bs-ride="carousel">
                     <div class="carousel-inner">
@@ -14,12 +16,12 @@
                         <a href="{{route('index.post')}}">
                             <div class="carousel-item {{ $loop->first ? 'active' : '' }} position-relative" data-bs-interval="3000">
                                <img src="{{Storage::url($continent['img'])}}" class="d-block w-100" id="headerHome" alt="immagini carosello">
-                               <h1 class="title">ALECLA<br>Viaggi</h1>
                             </div>
+                            <h1 class="title">ALECLA<br>Viaggi</h1>
                         </a>
                         @endforeach
                     </div>
-                    
+
                 </div> 
             </div>
         </div>

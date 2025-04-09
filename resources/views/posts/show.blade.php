@@ -6,17 +6,16 @@
                     <h1 class="titleItin mt-5">Viaggio a:</h1>
                 </div>
             </div>
-            <div class="row justify-content-center align-content-center  mb-5 text-center">
+            <div class="row justify-content-center align-content-center mb-5 text-center">
                 <div class="col-4 col-md-4 cards">
                     <div class="card text-bg-dark cards textShadow">
                         <img src="{{Storage::url($post->img)}}" class="card-img" alt="{{$post->title}}">
                         <div class="card-img-overlay">
                             <h5 class="card-title mt-5 mb-5 titleCard">{{$post->title}}</h5>
                             @if ($post->continent)
-                            
-                            <p class="card-text mb-5 textDimension">Continente:{{$post->continent->title}}</p>
+                            <p class="card-text mb-3 textDimension">Continente: {{$post->continent->title}}</p>
                             @else
-                            <p class="card-text mb-5 textDimension">Continente: Anonimo </p>
+                            <p class="card-text mb-3 textDimension">Continente: Anonimo </p>
                             @endif
                             <p class="card-text mb-5 textDimension">{{$post->description}}</p>
                             <p class="card-text mb-5 textDimension">{{$post->itinerary}}</p>
