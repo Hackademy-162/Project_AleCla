@@ -1,12 +1,12 @@
 <x-layout title="dettaglio viaggio">
-    <div class="sfondoDettaglio2 vh-100">
-        <div class="container">
+    
+        <div class="container-fluid sfondoDettaglio2 vh-100">
             <div class="row justify-content-center align-content-center text-center">
                 <div class="col-12">
                     <h1 class="titleItin mt-5">Viaggio a:</h1>
                 </div>
             </div>
-            <div class="row justify-content-center align-content-center mt-3 mb-5 text-center">
+            <div class="row justify-content-center align-content-center  mb-5 text-center">
                 <div class="col-4 col-md-4 cards">
                     <div class="card text-bg-dark cards textShadow">
                         <img src="{{Storage::url($post->img)}}" class="card-img" alt="{{$post->title}}">
@@ -40,5 +40,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    
 </x-layout>
