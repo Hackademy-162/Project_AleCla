@@ -8,6 +8,9 @@ use Illuminate\Support\Facades\Mail;
 
 class PublicController extends Controller
 {
+    public function about() {
+        return view('about');
+    }
     public function welcome() {
         $continents = \App\Models\Continent::all();
         return view('welcome', compact('continents'));

@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg">
   <div class="container-fluid position-fixed bg-dark text-center mt-4">
-    <a class="navbar-brand text-white titleNav" href="{{route('welcome')}}">ALECLA</a>
+    <a class="navbar-brand text-white titleNav" href="{{route('about')}}">ALECLA</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -30,8 +30,8 @@
               Benvenuto {{Auth::user()->name}}
             </a>
             <ul class="dropdown-menu bg-dark">
-              {{-- <li><a class="dropdown-item" href="{{route('article.create')}}">Admin2</a></li>
-              <li><hr class="dropdown-divider"></li> --}}
+              <li><a class="dropdown-item" href="{{route('continents.index')}}">Admin3</a></li>
+              <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="{{route('continents.create')}}">Admin2</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="{{route('create.post')}}">Admin</a></li>

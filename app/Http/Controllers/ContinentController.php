@@ -19,7 +19,8 @@ class ContinentController extends Controller implements HasMiddleware
      */
     public function index()
     {
-        return view('welcome');
+        $continents = Continent::all();
+        return view('continents.index', compact('continents'));
     }
 
     /**
@@ -58,7 +59,9 @@ class ContinentController extends Controller implements HasMiddleware
      */
     public function edit(Continent $continent)
     {
-        //
+        // dd($continent);
+
+        return view('continents.edit', compact('continent'));
     }
 
     /**
@@ -66,7 +69,13 @@ class ContinentController extends Controller implements HasMiddleware
      */
     public function update(Request $request, Continent $continent)
     {
-        //
+        // dd($request->all(), $continent);
+
+        $continent->update([
+            'title' => $request->title,
+            'img' => $request->file('img')->store('continents', 'public'),
+        ]);
+        return redirect(route('welcome'))->with('message', 'Continente modificato con successo!');
     }
 
     /**
@@ -74,6 +83,10 @@ class ContinentController extends Controller implements HasMiddleware
      */
     public function destroy(Continent $continent)
     {
-        //
+        // dd($continent);
+
+        $continent->delete();
+
+        return redirect(route('welcome'))->with('message', 'Continente eliminato con successo!');
     }
 }

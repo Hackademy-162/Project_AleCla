@@ -8,12 +8,17 @@ use App\Http\Controllers\ContinentController;
 
 // home
 Route::get('/', [PublicController::class, 'welcome'])->name ('welcome');
+Route::get('/about-us', [PublicController::class, 'about'])->name ('about');
 // Route::get('/l', [ArticleController::class, 'index'])->name ('homepage');
 // Route::get('/create', [ArticleController::class, 'create'])->name ('article.create');
 // Route::post('create/submit', [ArticleController::class, 'store'])->name('article.store');
 Route::get('/continenti', [ContinentController::class, 'index'])->name ('continents.index');
+Route::get('/continenti/edit/{continent}', [ContinentController::class, 'edit'])->name ('continents.edit');
 Route::get('/continenti/create', [ContinentController::class, 'create'])->name ('continents.create');
 Route::post('/continenti/submit', [ContinentController::class, 'store'])->name('continents.store');
+Route::put('/continenti/update/{continent}', [ContinentController::class, 'update'])->name('continents.update');
+
+Route::delete('/continenti/delete/{continent}', [ContinentController::class, 'destroy'])->name('continents.delete');
 
 // contatti
 Route::get('/contattaci', [PublicController::class, 'contact'])->name ('contattaci');
