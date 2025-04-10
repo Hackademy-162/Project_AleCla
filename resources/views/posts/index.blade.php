@@ -16,10 +16,9 @@
                         <div class="card-body justify-content-center align-items-center text-center">
                             <h5 class="card-title text-white text-center">{{$post->title}}:</h5>
                             @if ($post->continent)
-                            
-                            <a href="{{route('post.continent.search', ['continent' =>$post->continent])}}"><p class="card-text mb-5 textDimension text-white">Continente: {{$post->continent->title}}</p></a>
+                            <a href="{{route('post.continent.search', ['continent' =>$post->continent])}}"><p class="card-text textDimension text-white mb-3">Continente: {{$post->continent->title}}</p></a>
                             @else
-                            <p class="card-text mb-5 textDimension">Continente: Anonimo</p>
+                            <p class="card-text textDimension">Continente: Anonimo</p>
                             @endif
                             <h6 class="card-title text-white text-center text-truncate">{{$post->description}}</h6>
                             <a href="{{route('show.post', ['id' => $post->id])}}" class="btn btn-light text-center">Itinerario</a>
@@ -47,8 +46,7 @@
                         <div class="card-body justify-content-center align-items-center text-center">
                             <h5 class="card-title text-white text-center">{{$post->title}}:</h5>
                             @if ($post->continent)
-                            
-                            <a href="{{route('post.continent.search', ['continent' =>$post->continent])}}"><p class="card-text mb-5 textDimension text-white">Continente: {{$post->continent->title}}</p></a>
+                            <a href="{{route('post.continent.search', ['continent' =>$post->continent])}}"><p class="card-text textDimension text-white mb-3">Continente: {{$post->continent->title}}</p></a>
                             @else
                             <p class="card-text mb-5 textDimension">Continente: Anonimo</p>
                             @endif
@@ -78,8 +76,7 @@
                         <div class="card-body justify-content-center align-items-center text-center">
                             <h5 class="card-title text-white text-center">{{$post->title}}:</h5>
                             @if ($post->continent)
-                            
-                            <a href="{{route('post.continent.search', ['continent' =>$post->continent])}}"><p class="card-text mb-5 textDimension text-white">Continente: {{$post->continent->title}}</p></a>
+                            <a href="{{route('post.continent.search', ['continent' =>$post->continent])}}"><p class="card-text textDimension text-white mb-3">Continente: {{$post->continent->title}}</p></a>
                             @else
                             <p class="card-text mb-5 textDimension">Continente: Anonimo</p>
                             @endif
@@ -109,7 +106,7 @@
                         <div class="card-body justify-content-center align-items-center text-center">
                             <h5 class="card-title text-white text-center">{{$post->title}}:</h5>
                             @if ($post->continent)
-                            <a href="{{route('post.continent.search', ['continent' =>$post->continent])}}"><p class="card-text mb-5 textDimension text-white">Continente: {{$post->continent->title}}</p></a>
+                            <a href="{{route('post.continent.search', ['continent' =>$post->continent])}}"><p class="card-text textDimension text-white mb-3">Continente: {{$post->continent->title}}</p></a>
                             @else
                             <p class="card-text mb-5 textDimension">Continente: Anonimo</p>
                             @endif
@@ -140,7 +137,7 @@
                             <h5 class="card-title text-white text-center">{{$post->title}}:</h5>
                             @if ($post->continent)
                             
-                            <a href="{{route('post.continent.search', ['continent' =>$post->continent])}}"><p class="card-text mb-5 textDimension text-white">Continente: {{$post->continent->title}}</p></a>
+                            <a href="{{route('post.continent.search', ['continent' =>$post->continent])}}"><p class="card-text textDimension text-white mb-3">Continente: {{$post->continent->title}}</p></a>
                             @else
                             <p class="card-text mb-5 textDimension">Continente: Anonimo</p>
                             @endif
