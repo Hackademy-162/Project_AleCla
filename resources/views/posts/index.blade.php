@@ -1,16 +1,17 @@
 <x-layout title="Elenco itinerari">
-    <div class="sfondoItin">
-        <div class="container-fluid vh-100">
-            <div class="row">
-                <div class="col-12 mt-4">
-                    <h1 class="text-center titleItin">AFRICA:</h1>
+        <div class="container-fluid bannerIndex">
+            <div class="row text-center">
+                <div class="col-12 mt-5">
+                    <h1 class="titleItin">AFRICA:</h1>
                 </div>
             </div>
+        </div>
+        <div class="container-fluid vh-100 sfondoIndex">
             <div class="row justify-content-around align-items-center">
                 @foreach ($posts as $post)
                 @if ($post->continent->title == "AFRICA")
                 <div class="col-4 position-relative">
-                    <div class="card bg-dark mb-5">
+                    <div class="card cardsIndex bg-dark mb-5">
                         <img src="{{Storage::url($post->img)}}" class="card-img-top imgCards" alt="{{$post->title}}">
                         <div class="card-body justify-content-center align-items-center text-center">
                             <h5 class="card-title text-white text-center">{{$post->title}}:</h5>
@@ -29,17 +30,19 @@
                 @endforeach
             </div>
         </div>
-        <div class="container-fluid vh-100">
-            <div class="row">
-                <div class="col-12">
-                    <h1 class="text-center titleItin">AMERICHE:</h1>
+        <div class="container-fluid bannerIndex">
+            <div class="row text-center">
+                <div class="col-12 mt-4">
+                    <h1 class="titleItin">AMERICHE:</h1>
                 </div>
             </div>
+        </div>
+        <div class="container-fluid vh-100 sfondoIndex2">
             <div class="row justify-content-around align-items-center">
                 @foreach ($posts as $post)
                 @if ($post->continent->title == "AMERICHE")
                 <div class="col-4 position-relative">
-                    <div class="card bg-dark mt-3 mb-5">
+                    <div class="card cardsIndex bg-dark mt-3 mb-5">
                         <img src="{{Storage::url($post->img)}}" class="card-img-top imgCards" alt="{{$post->title}}">
                         <div class="card-body justify-content-center align-items-center text-center">
                             <h5 class="card-title text-white text-center">{{$post->title}}:</h5>
@@ -58,17 +61,19 @@
                 @endforeach
             </div>
         </div>
-        <div class="container-fluid vh-100">
-            <div class="row">
-                <div class="col-12">
-                    <h1 class="text-center titleItin">ASIA:</h1>
+        <div class="container-fluid bannerIndex">
+            <div class="row text-center">
+                <div class="col-12 mt-4">
+                    <h1 class="titleItin">ASIA:</h1>
                 </div>
             </div>
+        </div>
+        <div class="container-fluid vh-100 sfondoIndex3">
             <div class="row justify-content-around align-items-center">
                 @foreach ($posts as $post)
                 @if ($post->continent->title == "ASIA")
                 <div class="col-4 position-relative">
-                    <div class="card bg-dark mt-3 mb-5">
+                    <div class="card cardsIndex bg-dark mt-3 mb-5">
                         <img src="{{Storage::url($post->img)}}" class="card-img-top imgCards" alt="{{$post->title}}">
                         <div class="card-body justify-content-center align-items-center text-center">
                             <h5 class="card-title text-white text-center">{{$post->title}}:</h5>
@@ -87,17 +92,19 @@
                 @endforeach
             </div>
         </div>
-        <div class="container-fluid vh-100">
-            <div class="row">
-                <div class="col-12">
-                    <h1 class="text-center titleItin">EUROPA:</h1>
+        <div class="container-fluid bannerIndex">
+            <div class="row text-center">
+                <div class="col-12 mt-4">
+                    <h1 class="titleItin">EUROPA:</h1>
                 </div>
             </div>
+        </div>
+        <div class="container-fluid vh-100 sfondoIndex4">
             <div class="row justify-content-around align-items-center">
                 @foreach ($posts as $post)
                 @if ($post->continent->title == "EUROPA")
                 <div class="col-4 position-relative">
-                    <div class="card bg-dark mt-3 mb-5">
+                    <div class="card cardsIndex bg-dark mt-3 mb-5">
                         <img src="{{Storage::url($post->img)}}" class="card-img-top imgCards" alt="{{$post->title}}">
                         <div class="card-body justify-content-center align-items-center text-center">
                             <h5 class="card-title text-white text-center">{{$post->title}}:</h5>
@@ -115,17 +122,19 @@
                 @endforeach
             </div>
         </div>
-        <div class="container-fluid vh-100">
-            <div class="row">
-                <div class="col-12">
-                    <h1 class="text-center titleItin">OCEANIA:</h1>
+        <div class="container-fluid bannerIndex">
+            <div class="row text-center">
+                <div class="col-12 mt-4">
+                    <h1 class="titleItin">OCEANIA:</h1>
                 </div>
             </div>
+        </div>
+        <div class="container-fluid vh-100 sfondoIndex5">
             <div class="row justify-content-around align-items-center">
                 @foreach ($posts as $post)
                 @if ($post->continent->title == "OCEANIA")
                 <div class="col-4 position-relative">
-                    <div class="card bg-dark mt-3 mb-5">
+                    <div class="card cardsIndex bg-dark mt-3 mb-5">
                         <img src="{{Storage::url($post->img)}}" class="card-img-top imgCards" alt="{{$post->title}}">
                         <div class="card-body justify-content-center align-items-center text-center">
                             <h5 class="card-title text-white text-center">{{$post->title}}:</h5>
@@ -144,5 +153,5 @@
                 @endforeach
             </div>
         </div>
-    </div>
+    
 </x-layout>

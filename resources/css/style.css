@@ -41,7 +41,7 @@ nav{
     font-style: normal;
 }
 
-.sfondoDettaglio2{
+.sfondoShow{
     background: url(https://www.ilcenacolodeiviaggiatori.it/sito/wp-content/uploads/2023/12/viaggi1.jpg);
     background-size: cover;
 }
@@ -52,15 +52,16 @@ nav{
     background-size: cover;
 }
 
-.card{
+.cardsIndex{
     height: 80vh;
+    margin-top: 10vh;
 }
 
-.cards{
+/* .cardsShow{
     height: 50vh;
-    width: 700px;
+    width: 750px;
     margin-right: 6vw;
-}
+} */
 
 .imgCont{
     background-image: url(https://static.vecteezy.com/ti/vettori-gratis/p1/3484035-design-sfondo-astratto-moderno-con-forme-liquide-colorate-sfondo-fluido-design-per-la-pagina-di-atterraggio-tema-brochure-banner-copertina-stampa-volantino-libro-carta-o-pubblicita-vettoriale.jpg);
@@ -92,4 +93,41 @@ nav{
 
 .marginBot{
 margin-bottom: 10vh;
+}
+
+.sfondoIndex{
+    background-image:url('./img/Africa_spazio.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sfondoIndex2{
+    background-image:url('./img/Americhe_spazio.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sfondoIndex3{
+    background-image:url('./img/Asia_spazio.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sfondoIndex4{
+    background-image:url('./img/Europa_spazio.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sfondoIndex5{
+    background-image:url('./img/Oceania_spazio.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bannerIndex{
+    height: 20vh;
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-simple-travel-banner-image_152869.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }

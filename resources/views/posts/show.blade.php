@@ -1,14 +1,14 @@
-<x-layout title="dettaglio viaggio">
+<x-layout title="Dettagli del viaggio">
     
-        <div class="container-fluid sfondoDettaglio2 vh-100">
+        <div class="container-fluid sfondoShow vh-100">
             <div class="row justify-content-center align-content-center text-center">
                 <div class="col-12">
                     <h1 class="titleItin mt-5">Viaggio a:</h1>
                 </div>
             </div>
-            <div class="row justify-content-center align-content-center mb-5 text-center">
-                <div class="col-4 col-md-4 cards">
-                    <div class="card text-bg-dark cards textShadow">
+            <div class="row justify-content-center align-content-center mt-5 mb-5 text-center">
+                <div class="col-7 cardsShow">
+                    <div class="card text-bg-dark cardsShow textShadow">
                         <img src="{{Storage::url($post->img)}}" class="card-img" alt="{{$post->title}}">
                         <div class="card-img-overlay">
                             <h5 class="card-title mt-5 mb-5 titleCard">{{$post->title}}</h5>
@@ -27,14 +27,6 @@
                                 @csrf
                             </form>
                         </div>
-                        {{-- iv class="card 100-vh" style="width: 18rem;">
-                            <img src="{{Storage::url($post->img)}}" class="card-img-top" alt="{{$post->title}}">
-                            <div class="card-body">
-                                <h5 class="card-title">{{$post->title}}</h5>
-                                <p class="card-text">{{$post->description}}</p>
-                                <p class="card-text">{{$post->itinerary}}</p>
-                                <a href="{{route('index.post')}}" class="btn btn-primary">Torna indietro</a>
-                            </div> --}}
                     </div>
                 </div>
             </div>
