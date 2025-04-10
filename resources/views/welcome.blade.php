@@ -15,7 +15,7 @@
                         @foreach ($continents as $continent)
                         <a href="{{route('index.post')}}">
                             <div class="carousel-item {{ $loop->first ? 'active' : '' }} position-relative" data-bs-interval="2800">
-                               <img src="{{Storage::url($continent['img'])}}" class="d-block w-100" id="headerHome" alt="immagini carosello">
+                               <img src="{{Storage::url($continent['img'])}}" class="d-block w-100" id="carouselHome" alt="immagini carosello">
                             </div>
                             <h1 class="titleWelcome">ALECLA<br>Viaggi</h1>
                         </a>
