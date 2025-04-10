@@ -30,14 +30,14 @@
               Benvenuto {{Auth::user()->name}}
             </a>
             <ul class="dropdown-menu bg-dark">
-              <li><a class="dropdown-item" href="{{route('continents.index')}}">Admin3</a></li>
+              {{-- <li><a class="dropdown-item" href="{{route('continents.index')}}">Admin3</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="{{route('continents.create')}}">Admin2</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="{{route('create.post')}}">Admin</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li></li>
-              <li><hr class="dropdown-divider"></li>
+              <li></li> --}}
+              {{-- <li><hr class="dropdown-divider"></li> --}}
               <li><a class="dropdown-item text-white" href="{{route('contattaci')}}">Contattaci</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item text-white" href="#" onclick="event.preventDefault(); document.querySelector('#logout').submit()">Logout</a></li>
