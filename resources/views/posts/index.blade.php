@@ -32,7 +32,7 @@
         </div>
         <div class="container-fluid bannerIndex">
             <div class="row text-center">
-                <div class="col-12 mt-4">
+                <div class="col-12 mt-5">
                     <h1 class="titleItin">AMERICHE:</h1>
                 </div>
             </div>
@@ -42,7 +42,7 @@
                 @foreach ($posts as $post)
                 @if ($post->continent->title == "AMERICHE")
                 <div class="col-4 position-relative">
-                    <div class="card cardsIndex bg-dark mt-3 mb-5">
+                    <div class="card cardsIndex bg-dark mt-5">
                         <img src="{{Storage::url($post->img)}}" class="card-img-top imgCards" alt="{{$post->title}}">
                         <div class="card-body justify-content-center align-items-center text-center">
                             <h5 class="card-title text-white text-center">{{$post->title}}:</h5>
@@ -63,7 +63,7 @@
         </div>
         <div class="container-fluid bannerIndex">
             <div class="row text-center">
-                <div class="col-12 mt-4">
+                <div class="col-12 mt-5">
                     <h1 class="titleItin">ASIA:</h1>
                 </div>
             </div>
@@ -73,7 +73,7 @@
                 @foreach ($posts as $post)
                 @if ($post->continent->title == "ASIA")
                 <div class="col-4 position-relative">
-                    <div class="card cardsIndex bg-dark mt-3 mb-5">
+                    <div class="card cardsIndex bg-dark mt-5">
                         <img src="{{Storage::url($post->img)}}" class="card-img-top imgCards" alt="{{$post->title}}">
                         <div class="card-body justify-content-center align-items-center text-center">
                             <h5 class="card-title text-white text-center">{{$post->title}}:</h5>
@@ -94,7 +94,7 @@
         </div>
         <div class="container-fluid bannerIndex">
             <div class="row text-center">
-                <div class="col-12 mt-4">
+                <div class="col-12 mt-5">
                     <h1 class="titleItin">EUROPA:</h1>
                 </div>
             </div>
@@ -104,7 +104,7 @@
                 @foreach ($posts as $post)
                 @if ($post->continent->title == "EUROPA")
                 <div class="col-4 position-relative">
-                    <div class="card cardsIndex bg-dark mt-3 mb-5">
+                    <div class="card cardsIndex bg-dark mt-5">
                         <img src="{{Storage::url($post->img)}}" class="card-img-top imgCards" alt="{{$post->title}}">
                         <div class="card-body justify-content-center align-items-center text-center">
                             <h5 class="card-title text-white text-center">{{$post->title}}:</h5>
@@ -124,7 +124,7 @@
         </div>
         <div class="container-fluid bannerIndex">
             <div class="row text-center">
-                <div class="col-12 mt-4">
+                <div class="col-12 mt-5">
                     <h1 class="titleItin">OCEANIA:</h1>
                 </div>
             </div>
@@ -134,7 +134,7 @@
                 @foreach ($posts as $post)
                 @if ($post->continent->title == "OCEANIA")
                 <div class="col-4 position-relative">
-                    <div class="card cardsIndex bg-dark mt-3 mb-5">
+                    <div class="card cardsIndex bg-dark mt-5">
                         <img src="{{Storage::url($post->img)}}" class="card-img-top imgCards" alt="{{$post->title}}">
                         <div class="card-body justify-content-center align-items-center text-center">
                             <h5 class="card-title text-white text-center">{{$post->title}}:</h5>
