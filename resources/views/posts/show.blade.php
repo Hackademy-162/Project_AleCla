@@ -1,5 +1,4 @@
 <x-layout title="Dettagli del viaggio">
-    
         <div class="container-fluid sfondoShow vh-100">
             <div class="row justify-content-center align-content-center text-center">
                 <div class="col-12">

@@ -7,11 +7,11 @@ nav{
     z-index: 999;
 }
 
-#headerHome{
+/* #headerHome{
     height: calc(100vh - 40px);
-}
+} */
 
-.title{
+.titleWelcome{
     position: absolute;
     font-size: 15vh;
     font-weight: 600;
@@ -43,6 +43,7 @@ nav{
 .sfondoShow{
     background: url(https://www.ilcenacolodeiviaggiatori.it/sito/wp-content/uploads/2023/12/viaggi1.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .sfondoItin{
@@ -56,11 +57,10 @@ nav{
     margin-top: 10vh;
 }
 
-/* .cardsShow{
+.cardsShow{
     height: 50vh;
-    width: 750px;
-    margin-right: 6vw;
-} */
+    /* width: 90vw; */
+}
 
 .imgCont{
     background-image: url(https://static.vecteezy.com/ti/vettori-gratis/p1/3484035-design-sfondo-astratto-moderno-con-forme-liquide-colorate-sfondo-fluido-design-per-la-pagina-di-atterraggio-tema-brochure-banner-copertina-stampa-volantino-libro-carta-o-pubblicita-vettoriale.jpg);

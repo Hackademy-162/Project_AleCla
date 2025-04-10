@@ -1,5 +1,5 @@
 <x-layout title="Elenco itinerari">
-        <div class="container-fluid bannerIndex">
+        <div class="container-fluid bannerIndex gradientOverlay">
             <div class="row text-center">
                 <div class="col-12 mt-5">
                     <h1 class="titleItin">AFRICA:</h1>
