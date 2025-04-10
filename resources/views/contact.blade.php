@@ -22,8 +22,6 @@
                   <textarea class="form-control bg-dark text-white" id="textarea" cols="30" rows="10" placeholder="scrivi il tuo messaggio" name="message"></textarea>
                   <button type="submit" class="btn btn-primary mt-1 mb-3">Invia</button>
                 </div>
-                
-                
               </form>
         </div>
     </div>

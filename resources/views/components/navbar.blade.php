@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg">
-  <div class="container-fluid position-fixed bg-dark text-center mt-4">
+  <div class="container-fluid position-fixed bg-dark mt-4">
     <a class="navbar-brand text-white titleNav" href="{{route('about')}}">ALECLA</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -9,7 +9,7 @@
         <li class="nav-item">
           <a class="nav-link active text-white" aria-current="page" href="{{route('welcome')}}">HOME</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item navPosition">
           <a class="nav-link text-white" href="{{route('index.post')}}">ITINERARI</a>
           </li>
           @guest

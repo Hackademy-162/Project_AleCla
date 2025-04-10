@@ -53,8 +53,7 @@ nav{
 }
 
 .cardsIndex{
-    height: 80vh;
-    margin-top: 10vh;
+    height: 60vh;
 }
 
 .cardsShow{
@@ -68,7 +67,7 @@ nav{
 }
 
 .imgCards{
-    height: 400px;
+    aspect-ratio: 1/0.7;
 }
 
 .textShadow{
@@ -95,7 +94,7 @@ margin-bottom: 10vh;
 }
 
 .sfondoIndex{
-    background-image:url('./img/Africa_spazio.png');
+    background-image: url('./img/Africa_spazio.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -126,13 +125,21 @@ margin-bottom: 10vh;
 
 .bannerIndex{
     height: 20vh;
-    background-image: url(https://png.pngtree.com/background/20210710/original/pngtree-blue-minimalist-flat-travel-banner-background-picture-image_1016849.jpg);
+    background: url(https://png.pngtree.com/background/20210710/original/pngtree-blue-minimalist-flat-travel-banner-background-picture-image_1016849.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .sfondoDettaglioContinet{
-    background-image: url('./img/SfondoCards.png');
+    background-image: url('./img/come-viaggiare-per-il-mondo-spendendo-il-meno-possibile.webp');
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.navPosition{
+margin-left: 4vw;
+}
+
+@media screen and (max-width:991px){
+    
 }

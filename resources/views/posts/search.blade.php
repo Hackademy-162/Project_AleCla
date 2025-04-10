@@ -1,11 +1,11 @@
 <x-layout title="Esplorazione continentale">
-        <div class="container-fluid vh-100 sfondoDettaglioContinet">
+        <div class="container-fluid sfondoDettaglioContinet">
             <div class="row justify-content-center align-content-center text-center">
                 <div class="col-12 col-md-6 title rounded mt-5">
                     <h1 class="titleItin">Esplorando: {{$continent->title}}</h1>
                 </div>
             </div>
-            <div class="row justify-content-around align-items-center mb-5">
+            <div class="row justify-content-around align-items-center">
                 {{-- @dd($continent->posts); --}}
                 @foreach ($continent->posts as $post)
                 <div class="col-3 mb-5">
@@ -20,6 +20,7 @@
                     </div>
                 </div>
                 @endforeach
+                <a href="{{route('index.post')}}" class="btn btn-primary mt-5 textDimension">Torna indietro</a>
             </div>
         </div>
 </x-layout>
