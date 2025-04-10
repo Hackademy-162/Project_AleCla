@@ -10,13 +10,13 @@
                 <br>
                 Grazie alle nostre competenze potrai trovare la pace ovunque tu voglia: Dalle calde coste soleggiate, agli inferni glaciali del vasto e inesplorato nord, fino alle tropicali trappole pluviali.
                 <br>
-                Quindi non aspettare a prendi al volo il tuo viaggio, in direzione "sollazzo" per quel che rimane della tua vita, con noi:
+                Quindi non aspettare e prendi al volo il tuo viaggio, in direzione "sollazzo" per  il tempo che rimane della tua esistenza, con noi:
                 <br>
                 <br>
                 Contattaci attraverso i nostri social per tenerti informato sui viaggi e gli aggionamenti della nostra agenzia, inoltre puoi anche contattarci per qualsiasi domanda o per informazioni in generale al numero verde 800-930930045.
                 <br>
                 <br>
-                Passa dei bei momenti con noi, e regala un pò di cultura survivalista ai tuoi amici!
+                Passa "momenti unici" con noi, e regala un pò di cultura survivalista ai tuoi amici!
                 <br>
                 </p>
                 </div>
